@@ -32,6 +32,37 @@ header {
 	background-size: 100% auto;
 	background-image: url(img/lisc.jpg);
 	background-repeat: no-repeat;
+	position: relative;
+	
+
+
+}
+
+/*ANIMACJA*/
+
+@keyframes slide {
+	0% {
+		left: 0%;}
+	100% {
+		left: 100%;
+	}
+}
+
+/*jak sprawić, żeby przesunięty prostokąt nie rozwijał poziomego scrolla??*/
+header img{
+	height: 422px;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	animation-name: slide;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	overflow: hidden;
+	overflow: -moz-hidden-unscrollable;
+
 }
 
 /* dlaczego tu nie działa vertical-align: middle; */
@@ -41,12 +72,14 @@ header {
 	margin-bottom: 30px;
 	background-color: #F0EBF0;
 	vertical-align: middle;
+	font-family: "Raleway";
 }
 
 #portfolio{
 	text-align: center;
 	min-height: 50px;
 	background-color: #F0EBF0;
+	font-family: "Raleway";
 }
 
 #aboutimg img{
@@ -83,6 +116,7 @@ p{
 h3 {
 	font-weight: normal;
 	text-align: left;
+	font-family: "Raleway";
 }
 
 

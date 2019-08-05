@@ -34,11 +34,18 @@ header {
 	background-repeat: no-repeat;
 }
 
-/* dlaczego tu nie działa*/
-#about, #skills, #portfolio, #contact {
+/* dlaczego tu nie działa vertical-align: middle; */
+#about, #skills, #contact {
 	text-align: center;
 	min-height: 50px;
 	margin-bottom: 30px;
+	background-color: #F0EBF0;
+	vertical-align: middle;
+}
+
+#portfolio{
+	text-align: center;
+	min-height: 50px;
 	background-color: #F0EBF0;
 }
 
@@ -68,9 +75,9 @@ p{
 	text-align: left;
 	margin-right: 50px;
 }
-/* dlaczego to nie działa? */
+/* dlaczego to nie działa? vertical-align: center; */
 #aboutola{
-	align-content: center;
+	vertical-align: center;
 }
 
 h3 {
@@ -80,6 +87,11 @@ h3 {
 
 
 h4{
+	text-align: center;
+}
+
+#design{
+	align-content: center;
 	text-align: center;
 }
 
@@ -93,11 +105,11 @@ h4{
 	margin-right: auto;
 }
 
-#port {
+#port, #portwhite{
 	position: relative;
 }
 
-#port img{
+#port img, #portwhite img{
 	width: 100%;
 	min-height: 200px;
 	object-fit: cover;
@@ -106,5 +118,17 @@ h4{
 #port h3{
 	position:absolute;
 	z-index:2;
+	top: 50%;
+	left: 40%;
+	color: black;
+}
+
+/*jak w pozycji absolutnej wyśrodkować kontent*/
+#portwhite h3{
+	position:absolute;
+	z-index:2;
+	top: 50%;
+	left: 40%;
+	color: white;
 }
 

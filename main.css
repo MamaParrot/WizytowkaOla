@@ -6,17 +6,23 @@ body {
 }
 
 nav a {
-	text-align: center;
+
 	color: black;
 	font-family: "Raleway";
 	font-size: 1.4em;
-	justify-items: stretch;
-	display: inline-block;
+	justify-items: end;
+
 }
 
 
 #navigation {
+	top: 0px;
+	padding: 0px 16px;
 	justify-items: end;
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+	opacity: 0.93;
 }
 
 a>img {
@@ -25,17 +31,26 @@ a>img {
 }
 
 .container-fluid{
-	padding:0;
+	padding:0px;
+	box-sizing: border-box;
 }
 
-header {
+#header {
+	top: 42px;
 	background-size: 100% auto;
 	background-image: url(img/lisc.jpg);
 	background-repeat: no-repeat;
 	position: relative;
-	
+	margin-bottom: 30px;
+}
 
-
+#intro {
+	text-align: end;
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 10rem;
+	letter-spacing: 0.1em;
+	font-weight: 250;
 }
 
 /*ANIMACJA*/
@@ -60,26 +75,29 @@ header img{
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	overflow: hidden;
-	overflow: -moz-hidden-unscrollable;
+	overflow-x: hidden;
 
 }
 
-/* dlaczego tu nie działa vertical-align: middle; */
-#about, #skills, #contact {
+
+#about, #contact, #skills
+ {
 	text-align: center;
-	min-height: 50px;
-	margin-bottom: 30px;
-	background-color: #F0EBF0;
-	vertical-align: middle;
+	height: 100px;
+	background-color: #D6D6D6;
 	font-family: "Raleway";
+	line-height: 100px;
+	font-size: 2.7rem;
 }
 
 #portfolio{
 	text-align: center;
-	min-height: 50px;
-	background-color: #F0EBF0;
+	height: 100px;
+	background-color: #D6D6D6;
 	font-family: "Raleway";
+	height: 100px;
+	line-height: 100px;
+	font-size: 2.7rem;	
 }
 
 #aboutimg img{
@@ -87,35 +105,26 @@ header img{
 	height: 300px;
 	width: auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 50px auto;
 }
 
-h1
-{
-	text-align: end;
-	color: white;
-	font-family: "Century Gothic";
-	font-size: 11rem;
-	letter-spacing: 0.1em;
-	font-weight: 250;
-}
 
 p{
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	margin-right: 50px;
+	text-align: center;
+	vertical-align: middle;
 }
-/* dlaczego to nie działa? vertical-align: center; */
+
 #aboutola{
-	vertical-align: center;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 h3 {
 	font-weight: normal;
-	text-align: left;
+	text-align: center;
 	font-family: "Raleway";
 }
 
@@ -125,10 +134,16 @@ h4{
 }
 
 #design{
-	align-content: center;
+	display: block;
+	margin-top:auto;
+	margin-bottom: auto;
 	text-align: center;
 }
 
+#skill{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 #skill img{
 	border-radius: 100%;
@@ -152,17 +167,79 @@ h4{
 #port h3{
 	position:absolute;
 	z-index:2;
-	top: 50%;
-	left: 40%;
 	color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /*jak w pozycji absolutnej wyśrodkować kontent*/
 #portwhite h3{
 	position:absolute;
 	z-index:2;
-	top: 50%;
-	left: 40%;
 	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
+#mail p{
+	margin-top: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 1.1em;
+}
+
+#find{
+	text-align: center;
+
+}
+
+.icon-github-circled,
+.icon-linkedin-circled,
+.icon-instagram,
+.icon-facebook-circled {
+
+	color: black;
+	font-size: 50px;
+
+}
+
+@media (max-width: 575px){
+
+	
+
+	p{
+		margin: 30px 40px;
+	}
+
+	#intro{
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 749px) and (min-width: 574px) {
+
+	#intro {
+		font-size: 6.5rem;
+}
+	#design{
+		margin: 50px;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 750px){
+
+	#intro {
+		font-size: 8rem;
+	}
+
+	#aboutimg img{
+		margin-left: 0px;
+	}
+
+	
+}

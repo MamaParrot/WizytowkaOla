@@ -7,11 +7,17 @@
 	
 	<title>Ola Przytuła - Wizytówka</title>
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="main.css">
+
+	<!--ikono fonty-->
+	<link rel="stylesheet" href="css/fontello.css">
+
 	<!--bootstrap-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="main.css">
+
 	<!--czcionka do treści-->
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	
 	<!--czcionka do menu-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	
@@ -49,19 +55,19 @@
 		
 			<div class="container-fluid">
 				
-				<header>
+				<header id="header">
 					<span>
 						<img src="img/white-rectangle.jpg">
 					</span>
-					<h1>OLA <br>PRZYTUŁA</h1>
+					<h6 id="intro">OLA <br>PRZYTUŁA</h6>
 					
 				</header>
 				
-				<div class="row">
+				<div class="row no-gutters">
 					
-					<h2 class="col-sm-12" id="about">ABOUT</h2>
+					<h2 class="col-sm-12 text-center" id="about">ABOUT</h2>
 					<hr>
-					<div class="col-sm-6 col-md-5 offset-md-1" id="aboutimg">
+					<div class="col-md-5 offset-md-1" id="aboutimg">
 					
 						<figure>
 							<a href="#"><img src="img/about.jpg" alt="oto moje zdjecie"></a>
@@ -71,8 +77,8 @@
 
 					<div class="col-md-6" id="aboutola">
 
-						<h3>My name is Ola Przytuła</h3>
-						<p>
+						<h3 class="text-md-left">My name is Ola Przytuła</h3>
+						<p class="text-md-left">
 							I'm graduated student of cognitive science, which is interdisciplinary studies of human cognition.
 							To do that cognitive science gain knowledge from many other fields of learning, for exaple neuroscience,
 							artifficial inteligence, psychology and philosophy as well. My goal is to use what I've learned to design
@@ -83,27 +89,28 @@
 					<hr>
 					<h2 class="col-sm-12" id="skills">SKILLS</h2>
 					<hr>
-					
-					<figure class="col-md-4" id="skill">
+
+					<figure class="col-md-6 col-lg-4" id="skill">
+						<h4>Programming</h4>
+						<img src="img/programming.jpg" height="300px" width="300px">
+					</figure>
+
+					<figure class="col-md-6 col-lg-4" id="design">
+						<h4>Design</h4>
+						<p class="text-center">
+							I'm starting 'Communication Management' studies. My target is to understand how people
+							interact with a website and how to examine that.
+							<br>
+							I've already been on a few conferences, where I could learn how the design process looks like and how
+							important prototyping and testing is. 
+						</p>
+					</figure>
+
+					<figure class="col-md-12 col-lg-4" id="skill">
 						<h4>Soft skills</h4>
 						<img src="img/soft.jpg">
 					</figure>
 
-					<figure class="col-md-4" id="design">
-						<h4>Designing</h4>
-						<p>I'm starting 'Communication Management' studies and my target is to understand how people interact with
-							website
-							and how to examine that.
-							<br>
-							I've already been on a few conferences, where I could learn how the design process looks like and how
-							important
-							prototyping and testing is. </p>
-					</figure>
-
-					<figure class="col-md-4" id="skill">
-						<h4>Programming</h4>
-						<img src="img/programming.jpg" height="300px" width="300px">
-					</figure>
 
 					<hr>
 					<h2 class="col-sm-12" id="portfolio">PORTFOLIO</h2>
@@ -131,16 +138,19 @@
 					<h2 class="col-sm-12" id="contact">CONTACT</h2>
 					<hr>
 
-					<div class="col-sm-6">
+					<div class="col-xl-6" id="mail">
 						<p>
 							<strong>Aleksandra Przytuła</strong><br>
 							e-mail: <a href:#>aleksandra.przytula1995@gmail.com</a><br>
 						</p>
 					</div>
-					<div class="col-sm-6">
-						<a href="#"><img src="img/github.svg"></a>
-						<a href="#"><img src="img/instagram-icon-white-on-black-circle-1.png"></a>
-						<a href="#"><img src="img/icon-line-25.jpg"></a>
+
+					<div class="col-xl-5 text-xl-right ml-xl-5 mt-xl-5" id="find">
+						<a href="https://www.instagram.com/odaproject/?hl=pl" target="blank"><i class="icon-instagram"></i></a>
+						<a href="https://github.com/MamaParrot" target="blank"><i class="icon-github-circled"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100001121561726" target="blank"><i class="icon-facebook-circled"></i></a>
+						<a href="https://www.linkedin.com/in/aleksandra-przytu%C5%82a-90605b161/" target="blank"><i
+								class="icon-linkedin-circled"></i></a>
 				</div>
 				
 			</div>	
